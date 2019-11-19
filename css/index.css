@@ -129,16 +129,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: "Cabin", sans-serif;
 }
 header {
+  z-index: 1;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 75px;
-  position: fixed;
   background-color: white;
 }
 header #logo {
@@ -291,9 +295,12 @@ header #dropdown:hover #d_content {
   display: block;
 }
 #content {
-  height: 100%;
+  position: relative;
   width: 100%;
+  top: 75px;
 }
 #content #first {
-  background-image: url("/images/header1.jfif");
+  height: 900px;
+  background: url(/images/header6.jfif) center center fixed;
+  background-size: cover;
 }
