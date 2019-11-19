@@ -7,6 +7,7 @@ header{
     height:75px;
     position:fixed;
     background-color:@headerbg;
+    border-bottom:1px solid black;
 
     #logo{
         width:75px;
@@ -20,8 +21,6 @@ header{
     }
 
     #search{
-
-
         form{
             display:flex;
             align-items:center;
@@ -36,7 +35,7 @@ header{
             button{
                 cursor:pointer;
                 padding:10px 13px;
-                color:@accent2;
+                color:@accent;
                 background-color:@searchbg;
                 border:0px;
                 border-left: 1px solid @searchborder;
@@ -44,7 +43,7 @@ header{
             }
     
             button:hover{
-                color:@accent1;
+                color:@accent;
             }
         }
     }
@@ -52,10 +51,40 @@ header{
 
     #h_links{
         a{
+            padding-bottom:10px;
             color:@h_links;
+            text-decoration:none;
+        }
+
+        a:hover, .clicked a{
+            color:@h_linkshover;
+            border-bottom:2px solid @accent;
+        }
+    }
+
+    #register, #login{
+        padding: 10px 20px;
+        border-radius:20px;
+        letter-spacing:1px;
+    }
+
+    #login{
+        border:1px solid @h_links;
+
+        a{
+            color:@h_linkshover;
             text-decoration:none;
         }
     }
 
-    
+    #register{
+        background-color:@accent;
+
+        a{
+            color:@headerbg;
+            text-decoration:none;
+        }
+    }
 }
+
+
