@@ -20,12 +20,23 @@ header{
         }
     }
 
+    h2{
+        font:40px "Roboto Condensed", sans-serif;
+        text-transform:uppercase;
+
+        strong{
+            font-weight:bold;
+        }
+    }
+
     #search{
+
         form{
             display:flex;
             align-items:center;
 
             input[type=text] {
+                width:300px;
                 padding:10px;
                 border:none;
                 background-color:@searchbg;
@@ -50,41 +61,53 @@ header{
 
 
     #h_links{
+        width:570px;
+
         a{
-            padding-bottom:10px;
+            margin: 0px 10px;
+            padding: 0px 25px 27px 25px;
             color:@h_links;
             text-decoration:none;
         }
 
-        a:hover, .clicked a{
+        a:hover{
             color:@h_linkshover;
             border-bottom:2px solid @accent;
         }
     }
 
-    #register, #login{
-        padding: 10px 20px;
-        border-radius:20px;
-        letter-spacing:1px;
-    }
+    #join{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
 
-    #login{
-        border:1px solid @h_links;
-
-        a{
-            color:@h_linkshover;
-            text-decoration:none;
+        #register, #login{
+            padding: 10px 20px;
+            border-radius:7px;
+            letter-spacing:1px;
+        }
+    
+        #login{
+            margin-right:15px;
+            border:1px solid @h_links;
+    
+            a{
+                color:@h_linkshover;
+                text-decoration:none;
+            }
+        }
+    
+        #register{
+            background-color:@accent;
+            margin-right:100px;
+    
+            a{
+                color:@headerbg;
+                text-decoration:none;
+            }
         }
     }
-
-    #register{
-        background-color:@accent;
-
-        a{
-            color:@headerbg;
-            text-decoration:none;
-        }
-    }
+    
 }
 
 
