@@ -361,7 +361,7 @@ header #dropdown:hover #d_content {
   height: 900px;
   text-align: center;
   color: white;
-  background: url(/images/header2.jpg) center center fixed;
+  background: url(/images/header1.jpg) center center fixed;
   background-size: cover;
 }
 #content #first h1 {
@@ -494,10 +494,10 @@ footer {
   background-color: #212121;
 }
 footer #main {
-  width: 60%;
+  width: 70%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: top;
   box-sizing: border-box;
   margin: 0px auto;
   padding: 50px 0px;
@@ -508,32 +508,28 @@ footer #main {
   background-color: #212121;
 }
 footer #main h2 {
-  padding-bottom: 15px;
+  margin-bottom: 20px;
   font: bold 1.7em "Open Sans", sans-serif;
   letter-spacing: 2px;
-  border-bottom: 3px solid #f73723;
+}
+footer #main hr {
+  margin-left: 0px;
+  margin-bottom: 20px;
+  width: 25%;
+  border: 1px solid #f73723;
 }
 footer #main #m_about,
 footer #main #m_navigation,
 footer #main #m_recent,
-footer #main #m_content {
+footer #main #m_contact {
   text-align: left;
   width: 350px;
-  margin-right: 25px;
-}
-footer #main #m_about h1 {
-  opacity: 0.35;
-  margin-bottom: 10px;
-  font: 3em "Roboto Condensed", sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-footer #main #m_about h1 strong {
-  font-weight: bold;
+  margin-left: 25px;
+  line-height: 1.8em;
 }
 footer #main #m_about a {
   display: block;
-  margin-top: 17px;
+  margin-top: 15px;
   color: #f73723;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in-out;
@@ -552,7 +548,7 @@ footer #main #m_about a:hover {
 }
 footer #main #m_navigation a {
   display: block;
-  padding: 10px 0px;
+  padding: 15px 0px;
   color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -569,6 +565,12 @@ footer #main #m_navigation a .tri {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+footer #main #m_navigation a:first-of-type {
+  padding-top: 0px;
+}
+footer #main #m_navigation a:last-of-type {
+  border-bottom: 0px;
 }
 footer #main #m_navigation a:hover {
   color: #f73723;
@@ -587,20 +589,113 @@ footer #main #m_navigation a:hover .tri {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+footer #main #m_recent a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_recent a:hover {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_recent .post:hover {
+  color: #f73723;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_recent .post:hover a {
+  color: white;
+}
+footer #main #m_recent .post {
+  display: block;
+  padding: 15px 0px;
+  color: rgba(255, 255, 255, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_recent .post:first-of-type {
+  padding-top: 0px;
+}
+footer #main #m_recent .post:last-of-type {
+  border-bottom: 0px;
+}
+footer #main #m_contact {
+  color: rgba(255, 255, 255, 0.25);
+}
+footer #main #m_contact h2 {
+  color: white;
+}
+footer #main #m_contact .line {
+  padding: 15px 0px;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer #main #m_contact .line .f_icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.25);
+}
+footer #main #m_contact .line:first-of-type {
+  margin-top: 5px;
+}
+footer #main #m_contact .line:last-of-type {
+  border: 0px;
+}
+footer #main #m_contact a {
+  color: #f73723;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_contact a:hover {
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
 footer #bottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  padding: 17px 0px;
+  padding: 8px 0px;
   font: 0.8em "Open Sans", sans-serif;
   color: white;
-  background-color: black;
+  background-color: #121212;
+}
+footer #bottom img {
+  opacity: 0.3;
+  width: 50px;
 }
 footer #bottom #copyright {
-  color: rgba(255, 255, 255, 0.45);
+  margin-left: -25px;
+  color: rgba(255, 255, 255, 0.3);
 }
-footer #bottom a {
+footer #bottom #f_links {
+  margin-right: -80px;
+}
+footer #bottom #f_links a {
   margin: 0px 5px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
@@ -610,7 +705,7 @@ footer #bottom a {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-footer #bottom a:hover {
+footer #bottom #f_links a:hover {
   color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;

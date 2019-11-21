@@ -48,10 +48,10 @@ footer{
     background-color:@logobg;
 
     #main{
-        width:60%;
+        width:70%;
         display:flex;
-        justify-content:space-around;
-        align-items:center;
+        justify-content:space-between;
+        align-items:top;
         box-sizing:border-box;
         margin:0px auto;
         padding:50px 0px;
@@ -62,35 +62,30 @@ footer{
         background-color:@logobg;
 
         h2{
-            padding-bottom:15px;
+            margin-bottom:20px;
             font:bold 1.7em @font2;
             letter-spacing:2px;
-            border-bottom:3px solid @accent;
+
         }
 
-        #m_about, #m_navigation, #m_recent, #m_content{
+        hr{
+            margin-left:0px;
+            margin-bottom:20px;
+            width:25%;
+            border:1px solid @accent;
+        }
+
+        #m_about, #m_navigation, #m_recent, #m_contact{
             text-align:left;
             width:350px;
-            margin-right:25px;
+            margin-left:25px;
+            line-height:1.8em;
         }
 
         #m_about{
-
-            h1{
-                opacity:.35;
-                margin-bottom:10px;
-                font:3em @font1;
-                letter-spacing:3px;
-                text-transform:uppercase;
-
-                strong{
-                    font-weight:bold;
-                }
-            }
-    
             a{
                 display:block;
-                margin-top:17px;
+                margin-top:15px;
                 color:@accent;
                 text-decoration:none;
                 .hover();
@@ -105,7 +100,7 @@ footer{
         #m_navigation{
             a{
                 display:block;
-                padding:10px 0px;
+                padding:15px 0px;
                 color:rgba(255, 255, 255, 0.45);
                 text-decoration:none;
                 border-bottom:1px solid rgba(255, 255, 255, 0.1);
@@ -115,6 +110,14 @@ footer{
                     margin-right:5px;
                     .hover_all();
                 }
+            }
+
+            a:first-of-type{
+                padding-top:0px;
+            }
+
+            a:last-of-type{
+                border-bottom:0px;
             }
 
             a:hover{
@@ -131,10 +134,83 @@ footer{
         }
 
         #m_recent{
+            a{
+                display:block;
+                text-decoration:none;
+                color:rgba(255, 255, 255, 0.2);
+                .hover();
+            }
+
+            a:hover{
+                color:rgba(255, 255, 255, 1);
+                .hover();
+            }
+
+            .post:hover{
+                color:@accent;
+                .hover();
+            }
+
+            .post:hover a{
+                color:white;
+            }
+
+            .post{
+                display:block;
+                padding:15px 0px;
+                color:rgba(255, 255, 255, 0.45);
+                border-bottom:1px solid rgba(255, 255, 255, 0.1);
+                .hover();
+            }
+
+            .post:first-of-type{
+                padding-top:0px;
+            }
+
+            .post:last-of-type{
+                border-bottom:0px;
+            }
 
         }
 
         #m_contact{
+            color:rgba(255, 255, 255, 0.25);
+
+            h2{
+                color:white;
+            }
+
+            .line{
+                padding:15px 0px;
+                color:rgba(255, 255, 255, 0.6);
+                border-bottom:1px solid rgba(255, 255, 255, 0.1);
+
+                .f_icon{
+                    display:inline-block;
+                    margin-right:10px;
+                    font-size:1.2em;
+                    color:rgba(255, 255, 255, 0.25);
+                }
+            }
+
+            .line:first-of-type{
+                margin-top:5px;
+            }
+
+            .line:last-of-type{
+                border:0px;
+            }
+
+            a{
+                color:@accent;
+                text-decoration:none;
+                .hover();
+            }
+
+            a:hover{
+                color:white;
+                .hover();
+            }
 
         }
 
@@ -144,26 +220,35 @@ footer{
         display:flex;
         justify-content:space-around;
         align-items:center;
-        width:100%;
-        padding:17px 0px;
+        padding:8px 0px;
         font:.8em @font2;
         color:@headerbg;
-        background-color:black;
+        background-color:#121212;
+
+        img{
+            opacity:.3;
+            width:50px;
+        }
 
         #copyright{
-            color:rgba(255, 255, 255, 0.45);
+            margin-left:-25px;
+            color:rgba(255, 255, 255, 0.3);
         }
 
-        a{
-            margin:0px 5px;
-            text-decoration: none;
-            color:rgba(255, 255, 255, 0.7);
-            .hover();
-        }
+        #f_links{
+            margin-right:-80px;
 
-        a:hover{
-            color:rgba(255, 255, 255, 0.9);
-            .hover();
+            a{
+                margin:0px 5px;
+                text-decoration: none;
+                color:rgba(255, 255, 255, 0.7);
+                .hover();
+            }
+    
+            a:hover{
+                color:rgba(255, 255, 255, 0.9);
+                .hover();
+            }
         }
     }
 }
