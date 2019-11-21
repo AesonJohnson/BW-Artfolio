@@ -348,6 +348,7 @@ header #dropdown:hover #d_content {
   width: 100%;
   top: 75px;
   line-height: 1.5em;
+  margin-bottom: 175px;
 }
 #content #first {
   height: 900px;
@@ -445,36 +446,34 @@ header #dropdown:hover #d_content {
   margin-bottom: 8px;
   font: italic 1em "Open Sans", sans-serif;
 }
-footer {
+#newsletter {
   width: 100%;
-  margin-top: 200px;
-  background-color: #f73723;
-}
-footer #newsletter {
-  width: 800px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   box-sizing: border-box;
-  margin: 0px auto;
   padding: 30px;
   letter-spacing: 1px;
   color: white;
   background-color: #f73723;
 }
-footer #newsletter #f_text h2 {
+#newsletter #n {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin: 0px auto;
+}
+#newsletter #n #f_text h2 {
   text-transform: uppercase;
   font: bold 1.8em "Roboto Condensed", sans-serif;
 }
-footer #newsletter #f_text h3 {
+#newsletter #n #f_text h3 {
   opacity: 0.8;
   margin-top: 5px;
   font: 0.8em "Open Sans", sans-serif;
 }
-footer #newsletter #subscribe {
+#newsletter #n #subscribe {
   margin-top: 5px;
 }
-footer #newsletter #subscribe a {
+#newsletter #n #subscribe a {
   padding: 15px 20px;
   font-size: 0.9em;
   font-weight: bold;
@@ -484,10 +483,65 @@ footer #newsletter #subscribe a {
   color: white;
   background-color: #212121;
 }
-footer #main {
-  width: 100%;
-  text-align: center;
+footer {
   background-color: #212121;
+}
+footer #main {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 50px 0px;
+  font: 0.8em "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #212121;
+}
+footer #main h2 {
+  padding-bottom: 15px;
+  font: bold 1.7em "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #f73723;
+}
+footer #main #m_about,
+footer #main #m_navigation,
+footer #main #m_recent,
+footer #main #m_content {
+  text-align: left;
+  width: 350px;
+  margin-right: 25px;
+}
+footer #main #m_about h1 {
+  opacity: 0.35;
+  margin-bottom: 5px;
+  font: 2.5em "Roboto Condensed", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+footer #main #m_about h1 strong {
+  font-weight: bold;
+}
+footer #main #m_about a {
+  display: block;
+  margin-top: 10px;
+  color: #f73723;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+footer #main #m_about a:hover {
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 footer #bottom {
   display: flex;
@@ -519,7 +573,4 @@ footer #bottom a:hover {
   -ms-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-}
-footer #bottom img {
-  width: 30px;
 }
