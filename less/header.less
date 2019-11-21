@@ -73,25 +73,25 @@ header{
             padding: 0px 25px 25px 25px;
             color:@h_links;
             text-decoration:none;
-            .h_hover();
+            .hover();
 
             .icon{
                 font-size:1.2em;
                 margin-right:6px;
                 color:@h_icon;
-                .h_hover();
+                .hover();
             }
         }
 
         a:hover{
             color:@h_linkshover;
             border-bottom:10px solid @accent;
-            .h_hover();
+            .hover();
 
 
             .icon{
                 color:@accent;
-                .h_hover();
+                .hover();
             }
         }
 
@@ -111,11 +111,18 @@ header{
     
         #login{
             margin-right:15px;
-            border:1px solid @h_links;
+            border:1px solid @h_icon;
+            .hover();
     
             a{
                 color:@h_linkshover;
                 text-decoration:none;
+                .hover();
+            }
+
+            a:hover{
+                color:@accent;
+                .hover();
             }
         }
     
@@ -126,6 +133,12 @@ header{
             a{
                 color:@headerbg;
                 text-decoration:none;
+                .hover();
+            }
+
+            a:hover{
+                color:@logobg;
+                .hover();
             }
         }
     }
@@ -135,6 +148,8 @@ header{
         overflow:hidden;
 
         button{
+            margin-top:22px;
+            margin-bottom:22px;
             border:none;
             outline:none;
             font-size:1.6em;
@@ -146,7 +161,10 @@ header{
             position:absolute;
             display:none;
             width:190px;
-            margin-left:-120px;
+
+            margin-left:-140px;
+
+            padding:5px 0px;
             background-color:@headerbg;
 
             a{
@@ -154,11 +172,18 @@ header{
                 padding:12px 16px;
                 text-decoration:none;
                 color:@h_linkshover;
-                
-                .icon{
-                    margin-right:8px;
-                    .h_hover();
-                }
+                .hover();
+            }
+
+            .icon{
+                margin-right:8px;
+                color:@h_links;
+                .hover();
+            }
+
+            a:hover .icon{
+                color:@accent;
+                .hover();
             }
         }
     }
