@@ -343,3 +343,57 @@ header #dropdown:hover #d_content {
   text-decoration: none;
   color: white;
 }
+#content #second {
+  width: 1200px;
+  margin: 0px auto;
+  margin-top: 130px;
+}
+#content #second #head {
+  width: 800px;
+  margin: 0px auto;
+}
+#content #second #head h2,
+#content #second #head h3,
+#content #second #head h4 {
+  text-align: center;
+  margin-top: 15px;
+}
+#content #second #head h2 {
+  font: 1.6em "Open Sans", sans-serif;
+}
+#content #second #head h3 {
+  font: bold 1.1em "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#content #second #head h4 {
+  margin-bottom: 50px;
+  font: italic 0.9em "Open Sans", sans-serif;
+}
+#content #second .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#content #second .container .box {
+  margin-left: 40px;
+  font: 0.8em "Open Sans", sans-serif;
+  line-height: 2.3em;
+}
+#content #second .container .box .c_icon {
+  float: left;
+  margin-right: 17px;
+  margin-top: 6px;
+  font-size: 2em;
+}
+#content #second .container .box .c_title {
+  font: bold 1.2em "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#content #second .container .box .c_sub {
+  margin: 5px 0px;
+  margin-bottom: 8px;
+  font: italic 1em "Open Sans", sans-serif;
+}
