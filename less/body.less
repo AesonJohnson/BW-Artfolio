@@ -13,9 +13,15 @@
     #banner{
         width:100%;
         height:200px;
+        margin-bottom:-40px;
         background:url(/images/header2.jpg);
         background-size:cover;
         background-position:center center;
+
+        @media(max-width:@phone){
+            margin-bottom:0px;
+        }
+    
 
         h1{
             width:100%;
@@ -34,12 +40,21 @@
     #aboutus{
         width:900px;
         margin:0px auto;
-        text-align:center;
+        text-align:left;
+
+        @media(max-width:@phone){
+            max-width:450px;
+        }    
 
         p + p{
             margin-top:10px;
-            indent:50px;
+            text-indent:100px;
+
+            @media(max-width:@phone){
+                text-indent:50px;
+            }        
         }
+        
     }
     
     #first{
