@@ -9,6 +9,10 @@ header{
     height:75px;
     background-color:@headerbg;
 
+    @media(max-width:@phone){
+        max-width:500px;
+    }
+
     #logo{
         width:75px;
         height:75px;
@@ -30,10 +34,18 @@ header{
         strong{
             font-weight:bold;
         }
+
+        @media(max-width:@phone){
+            margin:0px;
+        }
     }
 
     #search{
         margin-right:50px;
+
+        @media(max-width:@phone){
+            display:none;
+        }
 
         form{
             display:flex;
@@ -67,6 +79,14 @@ header{
     #h_links{
         margin-left:-30px;
         font-size:1em;
+
+        @media(max-width:@phone){
+            display:none;
+        }
+
+        @media(max-width:@phone){
+            margin-left:0px;
+        }
 
         a{
             margin: 0px 10px;
@@ -107,6 +127,10 @@ header{
             padding: 10px 20px;
             border-radius:7px;
             letter-spacing:1px;
+
+            @media(max-width:@phone){
+                display:none;
+            }
         }
     
         #login{
@@ -144,8 +168,10 @@ header{
     }
 
     #dropdown{
-        margin-right:25px;
         overflow:hidden;
+
+        @media(max-width:@phone){
+        }
 
         button{
             margin-top:22px;
